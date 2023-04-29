@@ -177,8 +177,8 @@ html{
 
 header{
     background-image: url(imagens/plano-de-fundo-texturizado-de-concreto-liso-preto.jpg);
-    /*background-size: cover;
-    background-position:center;*/
+    background-size: cover;
+    background-position:center;
     height: 100vh;
     width: 100%;
     overflow: hidden;
@@ -213,13 +213,15 @@ header h2 span{
     top: 30%;
     left: 8%;
     transform: translateY(-50);
+    
 }
 
 .banner h4{
     color: #fff;
     letter-spacing: 4px;
     font-size: 20px;
-   
+    opacity: 0;
+    animation: moveBanner 1s forwards ;
 }
 
 .banner h1{
@@ -227,11 +229,13 @@ header h2 span{
     margin: 20px 0px 20px;
     letter-spacing: 4px;
     font-size: 75px;
+    animation: moveBanner 4s normal;
 }
 
 .banner h1 span{
     text-shadow: aliceblue;
     color: darkslategrey;
+    animation: moveBanner 4s normal;
 }
 
 .banner h3{
@@ -239,8 +243,28 @@ header h2 span{
     font-size: 25px;
     margin-bottom: 50px;
     letter-spacing: 3px;
+    opacity: 0;
+    animation: moveBanner 5s forwards ;
 
 }
+
+.banner button{
+    opacity: 0;
+    animation: moveBanner 7s forwards;
+}
+
+
+@keyframes moveBanner{
+    0%{
+        transform: translateX(10rem) rotateX(-50deg);
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
 
 .Container-btn form{
     width: 380px;
