@@ -1,3 +1,60 @@
 Imagem de <a href="https://br.freepik.com/fotos-gratis/conceito-de-rpa-com-tela-de-toque-de-mao-embacada_23992698.htm#query=TI&position=3&from_view=search&track=sph">Freepik</a>
 
 relacionar a imagem do autor em questã 
+
+ <nav>
+                    <h2>Portfó<span>lio</span></h2>
+                    <ul class="header-link">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Sobre Mim</a></li>
+                        <li><a href="#">Portfólio</a></li>
+                        <li><a href="#">Conhecimento Acadêmico</a></li>0
+                        <li><a href="#">Contato</a></li>
+                    </ul><!--header-link-->    
+                    <a href="a" class="btn">Subscribe</a>
+                </nav> 
+
+
+
+                
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    padding-left: 5%;
+    padding-right: 8%;
+}
+
+nav h2{
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    letter-spacing: 4px;
+}
+
+span{
+    color: darkslategrey;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 10px 25px;
+    list-style-type: none;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+     
+}
+
+nav ul li a:hover{
+    color:darkslategray;
+    transform: scale(1.2);
+    transition-duration: 1s ;
+    /*text-shadow: 2px 1px 3px #fff;*/  
+ 
+ }

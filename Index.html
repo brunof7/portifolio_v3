@@ -5,37 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href= "Style.css">
+    <link rel="manifest" href="/site.webmanifest">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portfolio Data Science</title>
 </head>
         <body>
-            <div class="background">
-                <nav>
+            <div class="container">
+                <div class="hamburguer">
+                    <div class="line" id="line1"></div>
+                    <div class="line" id="line2"></div>
+                    <div class="line" id="line3"></div>
+                    <span>fechar</span>
+                </div>
+                <header>
                     <h2>Portfó<span>lio</span></h2>
-                    <ul class="header-link">
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Sobre Mim</a></li>
-                        <li><a href="#">Portfólio</a></li>
-                        <li><a href="#">Conhecimento Acadêmico</a></li>0
-                        <li><a href="#">Contato</a></li>
-                    </ul><!--header-link-->    
-                    <a href="a" class="btn">Subscribe</a>
-                </nav> 
-                <div class="banner">
-                    <h4>Olá, meu nome é</h4>
-                    <h1>Bruno <span>Florêncio</span></h1>
-                    <h3>Sou Analista de dados</h3>
-                    <div class="Container-btn ">
-                        <form >
-                            <input type="email" nome="email" id="mail" placeholder="Envia o seu email aqui">
-                            <input type="submit" nome="submit" value="Enviar">
-                        </form>
+                    <div class="banner">
+                        <h4>Olá, meu nome é</h4>
+                        <h1>Bruno <span>Florêncio</span></h1>
+                        <h3>Sou Analista de dados</h3>
+                        <div class="Container-btn ">
+                            <button class="button">Saiba Mais</button>
+                        </div>
+                    </div><!--banner-->
+                </header><!--hearder-->
+                <aside class="sideBar">
+                    <nav>
+                        <ul class="menu">
+                            <li class="menuItem"><a href="#" class="menuLink">Home</a></li>
+                            <li class="menuItem"><a href="#sobreMim" class="menuLink">Sobre Mim</a></li>
+                            <li class="menuItem"><a href="#portfolio" class="menuLink">Portfólio</a></li>
+                            <li class="menuItem"><a href="#" class="menuLink">Formação</a></li>
+                            <li class="menuItem"><a href="#" class="menuLink">Contato</a></li>
+                        </ul>
+                    </nav>
+                    <div class="socialMedia">
+                        <a href="https://www.linkedin.com/in/brunoflorencio/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
                     </div>
-                </div><!--banner-->
-            </div><!--background-->
-            <section class="sobreMim">
+                </aside>
+            </div><!--container-->
+            <section class="sobreMim" id="sobreMim">
                 <div class="mainSobre">
                   <img src="imagens/foto_BrunoV4.png">
                   <div class="textoSobremim">
@@ -46,7 +58,7 @@
                    </div> 
                 </div>
             </section>
-            <section class= "sessaoPortifolio">
+            <section class= "sessaoPortifolio" id="portfolio">
               <div class="sessaoHeader">
                 <h1>Portfólio</h1>
               </div>
@@ -59,7 +71,7 @@
                         <h2>Análise Netflix</h2>
                         <h3>Linguagem R </h3>
                         <p>Foi realizada a análise financeira por meio da linguagem "R" sobre os dados financeiros da Netflix por meio do R Markdown.</p>
-                        <button>Saiba Mais</button>
+                        <a href="https://github.com/brunof7/brunoflorencio.git" target="_blank" rel="noopener noreferrer"><button>Saiba Mais</button></a>
                     </div>
                 </div>    
                 <div class="card">    
@@ -69,7 +81,7 @@
                     <div class="cardInfo">
                         <h2>Ações Bancárias</h2>
                         <h3>Python</h3>
-                        <p>Utilizando a API da Yahoo Finance para previsão de ativos financeiros em real-time das 4 principais ações bancos do país para realizar a previsão de suas ações.</p>
+                        <p>Com a API da Yahoo Finance, foi criado um Dashboard para previsão de ativos financeiros em real-time das 4 principais ações bancos do país.</p>
                         <button>Saiba Mais</button>
                     </div>
                 </div>    
@@ -80,11 +92,12 @@
                     <div class="cardInfo">
                         <h2>Site Portifólio</h2>
                         <h3>HTML5 e CSS3</h3>
-                        <p>Projeto da construção e desenvolvimento deste site de Portfólio, disponível no GitHub</p>
+                        <p>Disponibilizei o projeto e desenvolvimento deste site de Portfólio no GitHub, apesar de não ser o objetivo, vale apena compartilhar.</p>
                         <button>Saiba Mais</button>
                     </div>
                 </div>
               </div> 
             </section>
         </body>
+    <script src="script.js"></script>
 </html>
