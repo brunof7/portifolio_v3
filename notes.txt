@@ -58,3 +58,19 @@ nav ul li a:hover{
     /*text-shadow: 2px 1px 3px #fff;*/  
  
  }
+
+ window.onclick = (e) =>{
+   
+        // seleciona o .sidebar
+        let sid = document.querySelector('.container');
+     
+        // verifica se o elemento clicado contém a classe .sidebar
+        let alv = e.target.classList.contains('sidebar');
+        
+        // verifica se o elemento clicado é filho de .sidebar
+        let pai = e.target.closest('.sidebar');
+     
+        // se tudo for falso, fecha o sidebar
+        if(!alv && !pai) sid.classList.toggle('showMenu');
+        
+     }
