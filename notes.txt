@@ -13,10 +13,6 @@ relacionar a imagem do autor em questã
                     </ul><!--header-link-->    
                     <a href="a" class="btn">Subscribe</a>
                 </nav> 
-
-
-
-                
 nav{
     display: flex;
     align-items: center;
@@ -74,3 +70,13 @@ nav ul li a:hover{
         if(!alv && !pai) sid.classList.toggle('showMenu');
         
      }
+
+
+     imagem do header gerada com inteligencia artificial - https://www.shutterstock.com/pt
+     
+
+     É minha formação inicial de carreira e de suma importância, pois ela é o complemento necessário para a carreira em TI sob o ponto de vista de gestão.
+
+     Apesar de estar trabalhando continuamente há 2 anos com BI e Analytics, o aperfeiçoamento das técnicas para insights de dados se fazem necessárias 
+
+     Atualmente sou assessor TI e anteriormente trabalhava em projetos de automatização em departamentos, por isso, procurei formalizar o conhecimento na área
