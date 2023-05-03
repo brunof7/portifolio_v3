@@ -384,6 +384,7 @@ header h2 span{
     word-break: break-word;
     bottom: 10rem;
     margin: 2rem 10rem 2rem 0;
+    z-index: 300;
     
 }
 
@@ -561,6 +562,7 @@ header h2 span{
     text-align: center; 
 }*/
 
+
 .formacao:nth-child(1){
 
     grid-column: 4 / 7;
@@ -648,4 +650,44 @@ header h2 span{
 .imgFormacao img{
     object-fit: cover;
     width: 100%;
+}
+
+footer{
+    width: 100%;
+    height: 5rem;
+    background-color: #191919;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(imagens/plano-de-fundo-texturizado-de-concreto-liso-preto.jpg);
+}
+
+
+.rodape{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rodape p{
+    color: #fff;
+    font-size: 1rem;
+}
+
+.rodape p span{
+    text-transform: lowercase;
+}
+
+.rodape a{
+    margin: 0 2rem;
+    color: #fff;
+}
+
+.rodape ul{
+    display: flex;
+}
+
+.rodape ul i{
+    font-size: 2rem;
 }
