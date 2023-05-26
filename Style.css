@@ -64,8 +64,9 @@ html{
 
 .showMenu .hamburguer{
     right: 6.8rem ;
-
 }
+
+
 
 .line{
     width: 100%;
@@ -122,14 +123,16 @@ html{
 .menuItem{
     text-align: center;
     margin-top: 2rem;
-    margin-bottom: 4rem;
+    margin-bottom: 9rem;
     margin-left: 1.5rem;
+    margin-right: 1rem;
     align-items: center;
 }
 
 .menuLink{
     font-family: var(--font-primary);
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+    font-weight: bold;
     letter-spacing: 0.2rem;
     opacity: 0.9;
     justify-content:space-between;
@@ -275,7 +278,6 @@ header h2 span{
         opacity: 1;
     }
 }
-
 
 
 .Container-btn form{
@@ -426,7 +428,7 @@ header h2 span{
     height:100vh;
     overflow: hidden;
     font-family: var(--font-primary);
-    padding-top: 2rem;
+    padding-top: 8rem;
  
 }
 
@@ -435,7 +437,7 @@ header h2 span{
     font-weight: bold;
     font-size: 3rem;
     text-transform: capitalize;
-    margin-bottom: 3rem;
+    margin-bottom: 8rem;
     text-align: center; 
 }
 
@@ -542,7 +544,7 @@ header h2 span{
     width: 100%;
     height:100vh;
     overflow: hidden;
-    padding-top: 2rem;
+    padding-top: 9rem;
 }
 
 .formacoes{
