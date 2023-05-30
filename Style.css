@@ -742,7 +742,7 @@ footer{
         height: 2rem;
         position: fixed;
         z-index: 350;
-        right: 6rem;
+        right: 5rem;
         top: 1.5rem;
         display: flex;
         flex-direction: column;
@@ -759,13 +759,14 @@ footer{
     }
     
     .sideBar{
-        width: 17rem;
+        width: 12rem;
         height: 50vh;
         border-radius: 30px 20px;
         opacity: 0.9;
         position: fixed;
         top: 2%;
-        right: -17rem;
+        right: -12rem;
+        
         z-index: 300;
     }
 
@@ -993,8 +994,8 @@ footer{
 
     .cardInfo{
         position: absolute;
-        display: inline-block;
-        bottom: 0;
+        display: block;
+        bottom: -3rem;
     }
 
     .cardInfo p{
@@ -1029,19 +1030,15 @@ footer{
          
     }
     
-    .cardInfo:hover button:last-child{
-        transform: scale(1.2);
-        transition: all 0.5s;
-        cursor: pointer;
-    
-    }
-    
     .card:hover .cardInfo{
         bottom: -6rem;
         opacity: 1;
         visibility: visible;
     }
 
+    
+    
+    
 
     /**---Rodape-----**/
 
