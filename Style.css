@@ -327,7 +327,7 @@ header{
 
 .sobreMim{
     background-color: #191919;
-    background: -webkit-gradient(linear, left top, left bottom, from(#191919), to(#000));
+    background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#191919));
     background: -moz-linear-gradient(top, #000000, #CCCCCC, );
     width: 100%;
     height: 100vh;  
@@ -439,8 +439,9 @@ header{
     background: -moz-linear-gradient(top, #000000, #CCCCCC, );
     opacity: 0.99;
     width: 100%;
-    height:100vh;
+    height: 100vh;
     overflow: hidden;
+    padding-top: 2rem;
    
 }
 
@@ -461,6 +462,9 @@ header{
     text-align: center; 
 }*/
 
+.formacao{
+    padding-top: 5rem;
+}
 
 .formacao:nth-child(1){
 
@@ -542,13 +546,14 @@ header{
 
 .imgFormacao{
     grid-column: 7 / 10;
-    grid-row: 2 / 4;
+    grid-row: 3 / 4;
     width: 100%;
 }
 
 .imgFormacao img{
     object-fit: cover;
     width: 100%;
+
 }
 
 
@@ -560,10 +565,10 @@ header{
     background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#191919));
     background: -moz-linear-gradient(top, #000000, #CCCCCC, );
     width: 100%;
-    height:100vh;
+    height: 90vh;
     overflow: hidden;
     font-family: var(--font-primary);
-    
+    padding-top: 2rem;
  
 }
 
@@ -742,7 +747,7 @@ footer{
         height: 2rem;
         position: fixed;
         z-index: 350;
-        right: 5rem;
+        right: 2.5rem;
         top: 1.5rem;
         display: flex;
         flex-direction: column;
@@ -816,13 +821,15 @@ footer{
     .sobreMim{
         height: 100vh;
         padding-top: 1rem;
+        gap: 2rem;
     }
 
     .img-sobreMim {
         width: 100%;
         height: 100vh;
-        overflow: hidden;  
-        position: absolute;
+
+        object-fit: cover;
+        object-position: bottom;
     }
 
     .img-sobreMim img{
@@ -959,8 +966,8 @@ footer{
     /**-- Portifolio ---**/
 
     .sessaoPortifolio{
-
         width: 100%;
+        height: 100%;
     }
     .projetos{
         display:inline-block;
@@ -984,18 +991,20 @@ footer{
     }
 
     .cardImg img{
-        object-fit: cover;
+        /*object-fit: cover;*/
         width: 15rem;
         height: 9rem;
         border-radius: .6rem;
         opacity: 0.8;
-        transition: opacity .3s;
+        /*transition: opacity .3s;*/
     }
 
     .cardInfo{
         position: absolute;
         display: block;
-        bottom: -3rem;
+        bottom: -6rem;
+        visibility: visible;
+        z-index: 150;
     }
 
     .cardInfo p{
@@ -1036,9 +1045,6 @@ footer{
         visibility: visible;
     }
 
-    
-    
-    
 
     /**---Rodape-----**/
 
